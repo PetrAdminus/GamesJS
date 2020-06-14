@@ -1,17 +1,16 @@
-'use sctrict'
+'use strict'
 
 let isNumber = function (n) {
 
-  return !isNaN(parseFloat(n)) && isFinite(n)
+  return !isNaN(parseFloat(n)) && isFinite(n);
 };
 
 function randomInteger(min, max) {
 
-  let rand = Number(Math.round(min + Math.random() * (max + 1 - min)));
-  return rand;
+  return Number(Math.round(min + Math.random() * (max + 1 - min)));
+
 };
 let resNumb = randomInteger(1, 100);
-console.log(resNumb);
 
 let userResponse = function () {
 
